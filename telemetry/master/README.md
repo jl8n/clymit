@@ -1,4 +1,4 @@
-# MASTER
+# Master
 
 The master is a process that runs on a dedicated server.
 
