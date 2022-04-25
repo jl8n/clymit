@@ -150,19 +150,13 @@ module.exports = configure(function (/* ctx */) {
     pwa: {
       workboxMode: 'generateSW', // or 'injectManifest'
       injectPwaMetaTags: true,
-      swFilename: 'sw.js',
+      swFilename: 'service-worker.js',
       manifestFilename: 'manifest.json',
       useCredentialsForManifestTag: false,
-      extendGenerateSWOptions (cfg) {},
-      extendInjectManifestOptions (cfg) {},
-      extendManifestJson (json) {},
-      extendPWACustomSWConf (esbuildConf) {},
-    },
-
-    sourceFiles: {
-      pwaRegisterServiceWorker: 'src-pwa/register-service-worker',
-      pwaServiceWorker: 'src-pwa/custom-service-worker',
-      pwaManifestFile: 'src-pwa/manifest.json',
+      // extendGenerateSWOptions (cfg) {}
+      // extendInjectManifestOptions (cfg) {},
+      // extendManifestJson (json) {}
+      // extendPWACustomSWConf (esbuildConf) {}
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
